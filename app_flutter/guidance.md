@@ -40,11 +40,11 @@
 
 ### 2.1 Android Studio配置
 
-1. 通过[1.3小节](#1.3 所需软件)中的链接下载`Android Studio`安装包，并安装至`D:\dev\Android`目录下
+1. 通过[1.3小节](#1.3 所需软件)中的链接下载`Android Studio`安装包，并安装至`D:\dev\Android\`目录下
 
    > 💡安装目录可自定义
 
-2. 在`D:\dev\Android`目录下新建`sdk`文件夹，打开`Android Studio`，第一次打开会提示没有sdk，按提示安装sdk即可
+2. 在`D:\dev\Android\`目录下新建`sdk`文件夹，打开`Android Studio`，第一次打开会提示没有sdk，按提示安装sdk即可
 
    ![](./assets/Screenshot 2025-12-09 174103.png)
 
@@ -72,7 +72,7 @@
 
    ![](./assets/Screenshot 2025-12-09 181910.png)
 
-   ![](D:\dev\project\app_flutter\assets\Screenshot 2025-12-09 181924.png)
+   ![](.\assets\Screenshot 2025-12-09 181924.png)
 
    ![](./assets/Screenshot 2025-12-09 181934.png)
 
@@ -136,7 +136,26 @@
 
    ![](./assets/Screenshot 2025-12-09 190754.png)
 
-   > 💡修改完要保存
+   > ✅代码如下，修改完要保存
+
+   ```kotlin
+   maven {url = uri("https://maven.aliyun.com/repository/public")}
+   maven {url = uri("https://maven.aliyun.com/repository/google")}
+   maven {url = uri("https://maven.aliyun.com/repository/releases")}
+   maven {url = uri("https://maven.aliyun.com/repository/central")}
+   maven {url = uri("https://maven.aliyun.com/repository/gradle-plugin")}
+   maven {url = uri("https://maven.aliyun.com/repository/apache-snapshots")}
+   maven {url = uri("https://jitpack.io")}
+   maven {url = uri("https://maven.aliyun.com/nexus/content/groups/public")}
+   ```
+
+   ```xml
+   <uses-permission android:name="android.permission.INTERNET" />
+   ```
+
+   ```properties
+   distributionUrl=https\://mirrors.cloud.tencent.com/gradle/gradle-8.14-all.zip
+   ```
 
 6. 在`VS Code`中启动模拟器
 
