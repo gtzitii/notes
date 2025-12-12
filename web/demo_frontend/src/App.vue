@@ -7,7 +7,7 @@ import { ref } from 'vue'
 const text = ref('')  // 用来保存后端返回的数据
 const visitToBackend = async () => {
   try {
-    const res = await axios.get('http://localhost:8080')
+    const res = await axios.get('/api/hello')  // 访问后端接口
     text.value = res.data   // 更新显示
   } catch (error) {
     console.error('Error fetching data from backend:', error)

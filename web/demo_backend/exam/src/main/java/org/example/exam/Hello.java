@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.swing.*;
 
-//@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*")
 @RestController
 public class Hello {
-    @RequestMapping
+    @RequestMapping("/hello")
     String getHello() {
         return "hello world";
     }
