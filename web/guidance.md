@@ -86,7 +86,7 @@
 
    > 💡安装目录可自定义
 
-3. 在`VS Code`中打开`D:\dev\project\web\demo`，项目结构如图
+3. 在`VS Code`中打开`D:\dev\project\web\demo_frontend`，项目结构如图
 
    ![](./assets/Screenshot 2025-12-11 190019.png)
 
