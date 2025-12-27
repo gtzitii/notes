@@ -1,0 +1,1 @@
+该教程指导如何开发win平台的桌面app，详见guidance.md
