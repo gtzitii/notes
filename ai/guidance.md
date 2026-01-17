@@ -70,8 +70,6 @@
 
 4. 在`Anaconda PowerShell Prompt`中创建虚拟环境
 
-   ![(./assets/Screenshot 2025-12-27 144007.png)
-
    ![](./assets/Screenshot 2025-12-27 143941.png)
 
    ![](./assets/Screenshot 2025-12-27 144203.png)
@@ -150,7 +148,7 @@
 
 #### 3.2.1 创建数据集
 
-1. 在`D:\dev\project\ai\demo`项目下创建`data`文件夹，从[github]()下载原始数据：`手机价格预测.csv`，并保存到`data`中
+1. 在`D:\dev\project\ai\demo`项目下创建`data`文件夹，从[github](https://github.com/gtzitii/notes/blob/main/ai/demo/data/%E6%89%8B%E6%9C%BA%E4%BB%B7%E6%A0%BC%E9%A2%84%E6%B5%8B.csv)下载原始数据：`手机价格预测.csv`，并保存到`data`中
 
    ![](D:\dev\notes\ai\assets\Screenshot 2025-12-27 213006.png)
 

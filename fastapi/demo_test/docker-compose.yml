@@ -1,0 +1,22 @@
+# docker-compose 文件版本
+# 3.9 适用于 Docker 20+，是目前比较通用、稳定的版本
+version: "3.9"
+
+services:
+  # 定义一个服务，名字叫 backend_fastapi
+  # 这个名字会作为 compose 内部的服务标识
+  backend_fastapi:
+    # 使用当前目录下的 Dockerfile 构建镜像
+    build: .
+
+    # 指定容器名称
+    # 不指定的话，docker-compose 会自动生成
+    container_name: container_backend_fastapi
+
+    # 端口映射
+    # 格式: "宿主机端口:容器端口"
+    # 这里表示:
+    #   外部访问宿主机 8000 端口
+    #   实际转发到容器内部的 8000 端口
+    ports:
+      - "8000:8000"
